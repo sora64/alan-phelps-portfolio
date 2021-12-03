@@ -45,10 +45,7 @@ header h1 a {
 }
 
 header h1 a:hover {
-    background: var(--fg);
-    color: var(--blue);
-    border-radius: 30px;
-    text-shadow: none;
+    color: var(--fg);
 }
 
 header nav {
