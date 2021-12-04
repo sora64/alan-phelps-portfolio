@@ -7,6 +7,7 @@
 :root {
     --fg: #039203c5;
     --lg: rgb(20, 236, 20);
+    --header: #161c6bee;
     --blue: #0d15a58f;
     --lite-blue: rgba(26, 117, 175, 0.9);
     --off-white: rgb(247, 241, 241);
@@ -19,7 +20,7 @@ body {
 
 header {
     padding: 20px 35px 30px;
-    background-color: var(--blue);
+    background-color: var(--header);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -92,7 +93,7 @@ footer h2 {
 }
 
 section {
-    padding: 70px;
+    padding: 40px;
     margin: 0;
     background-color: var(--blue);
 }   
@@ -179,12 +180,9 @@ a {
     color: var(--off-white);
 }
 
-
-
-.ms2 h2 {
+.main-section h3 {
     color: var(--lg);
 }
-
 
 .main-section address {
     color: var(--off-white);
@@ -198,11 +196,25 @@ a {
     border-radius: 15%;
 }
 
-.main-section address a:hover {
+.main-section a {
+    color: var(--off-white);
+}
+
+.main-section a:hover {
     color: var(--lg);
     text-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .text-right {
     text-align: right;
+}
+
+#resume {
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+#resume h2:hover {
+    color: var(--off-white);
+    text-shadow: rgba(0, 0, 0, 0.4);
 }
