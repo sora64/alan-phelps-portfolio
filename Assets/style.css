@@ -1,3 +1,4 @@
+/* Styling for the whole page */
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +19,9 @@ body {
     font-family: "Copperplate", Helvetica, sans-serif;
 }
 
+/* Styling for the header */
 header {
-    padding: 20px 35px 30px;
+    padding: 10px 35px 10px;
     background-color: var(--db);
     display: flex;
     justify-content: space-between;
@@ -77,29 +79,15 @@ header nav ul li a:hover {
     box-shadow:rgba(0, 0, 0, 0.4)
 }
 
-footer {
-    background: var(--blue);
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    color: var(--off-white);
-    font-size: 30px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
+/* Styling for the page's sections, including the hero and content */
 section {
-    padding: 35px 40px 30px 40px;
-    margin: 0;
+    padding: 50px;
     background-color: var(--blue);
 }   
 
 section h2 {
-    padding-bottom: 30px;
+    padding: 35px auto 30px auto;
+    color: var(--lg)
 }
 
 a {
@@ -115,6 +103,7 @@ a {
     color: var(--db);
 }
 
+/* Styling for the hero */
 .hero {
     background-image: url("./Images/IMG_1153.JPG");
     background-size: cover;
@@ -153,7 +142,7 @@ a {
     align-items: flex-start;
 }
 .hero-welcome p {
-    font-size: 25px;
+    font-size: 26px;
     font-style: bold;
     max-width: 40%;
     margin: 30px;
@@ -167,39 +156,39 @@ a {
     border-radius: 25%;
 }
 
-.main-section {
+/* Styling for all content sections */
+.content {
     font-size: 45px;
     color: var(--lg);
     margin: 5px auto 5px auto;
     width: 100%;
 }
 
-.main-section p {
-    font-size: 20px;
+.content p {
+    font-size: 25px;
     color: var(--off-white);
 }
 
-.main-section h3 {
+.content h3 {
     color: var(--lg);
 }
 
-.main-section address {
+.content address {
     color: var(--off-white);
-    font-size: 20px;
-    padding: 3px;
-    margin: 3px auto 3px auto;
-    padding: 10px 0px 10px 75px;
-    width: 60%;
+    font-size: 25px;
+    margin: 10px auto 3px auto;
+    padding: 20px 0px 10px 75px;
+    width: 55%;
     background-color: var(--lb);
     border: solid 5px var(--fg);
-    border-radius: 15%;
+    border-radius: 20%;
 }
 
-.main-section a {
+.content a {
     color: var(--off-white);
 }
 
-.main-section a:hover {
+.content a:hover {
     color: var(--lg);
     text-shadow: rgba(0, 0, 0, 0.4);
 }
@@ -208,12 +197,72 @@ a {
     text-align: right;
 }
 
+/* Styling for the work section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects a {
+    position: relative;
+    display: inline-block;
+}
+.projects img {
+    display: block;
+    border: solid 5px var(--db);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.link-text {
+    color: var(--off-white);
+    background-color:rgba(20, 236, 20, 0.164);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    padding: 100px 0 0 0;
+    text-shadow: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.lt1 {
+    height: 300px;
+    width: 300px;
+}
+
+.lt2 {
+    height: 300px;
+    width: 400px;
+}
+
+/* Styling for the resume section */
 #resume {
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
     text-align: center;
 }
 
 #resume h2:hover {
     color: var(--off-white);
     text-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the footer */
+footer {
+    background: var(--blue);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: var(--off-white);
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
