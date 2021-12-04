@@ -210,14 +210,14 @@ a {
 }
 .projects img {
     display: block;
-    border: solid 5px var(--db);
+    border: solid 5px var(--blue);
     border-radius: 15px;
     z-index: 1;
 }
 
 .link-text {
     color: var(--off-white);
-    background-color:rgba(20, 236, 20, 0.164);
+    background-color:rgba(76, 99, 173, 0.555);
     position: absolute;
     top: 50%;
     left: 0;
@@ -227,7 +227,7 @@ a {
     padding: 100px 0 0 0;
     text-shadow: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
-    z-index: -1;
+    opacity: 0;
 }
 
 .lt1 {
@@ -238,6 +238,10 @@ a {
 .lt2 {
     height: 300px;
     width: 400px;
+}
+
+.link-text:hover {
+    opacity: 100;
 }
 
 /* Styling for the resume section */
