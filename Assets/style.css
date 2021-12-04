@@ -6,13 +6,14 @@
 
 :root {
     --fg: #039203c5;
+    --lg: rgb(20, 236, 20);
     --blue: #0d15a58f;
-    --lite-blue: rgba(26, 117, 145, 0.9);
+    --lite-blue: rgba(26, 117, 175, 0.9);
     --off-white: rgb(247, 241, 241);
 }
 
 body {
-    background: var(--fg);
+    background-color: var(--fg);
     font-family: "Copperplate", Helvetica, sans-serif;
 }
 
@@ -25,7 +26,6 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -73,6 +73,7 @@ header nav ul li a:hover {
     color: var(--blue);
     border-radius: 20px;
     text-shadow: none;
+    box-shadow:rgba(0, 0, 0, 0.4)
 }
 
 footer {
@@ -91,11 +92,27 @@ footer h2 {
 }
 
 section {
-    padding: 60px;
+    padding: 70px;
+    margin: 0;
+    background-color: var(--blue);
 }   
+
+section h2 {
+    padding-bottom: 30px;
+}
 
 a {
     text-decoration: none;
+}
+
+.section-alt {
+    background-color: var(--fg);
+    width: 100%;
+    border-color: var(--lg)
+}
+
+.section-alt h2 {
+    color: var(--blue);
 }
 
 .hero {
@@ -104,18 +121,19 @@ a {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    margin: 0;
 }
 
 .hero-welcome {
     background-color: var(--lite-blue);
     padding: 15px;
-    border: solid 5px var(--fg);
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 75%;;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid 5px var(--fg);
     border-radius: 15px;
     margin: 0 auto;
 }
@@ -151,12 +169,9 @@ a {
 
 .main-section {
     font-size: 45px;
-    color: var(--blue);
-    border-bottom: 2px solid;
-    padding-bottom: 15px;
-    text-align: center;
-    margin: auto;
-    width: 50%;
+    color: var(--lg);
+    margin: 5px auto 5px auto;
+    width: 100%;
 }
 
 .main-section p {
@@ -164,8 +179,28 @@ a {
     color: var(--off-white);
 }
 
-.text-left {
-    text-align: left;
+
+
+.ms2 h2 {
+    color: var(--lg);
+}
+
+
+.main-section address {
+    color: var(--off-white);
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px auto 3px auto;
+    padding: 10px 0px 10px 75px;
+    width: 60%;
+    background-color: var(--lite-blue);
+    border: solid 5px var(--fg);
+    border-radius: 15%;
+}
+
+.main-section address a:hover {
+    color: var(--lg);
+    text-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .text-right {
