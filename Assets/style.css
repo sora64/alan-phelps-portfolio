@@ -7,9 +7,9 @@
 :root {
     --fg: #039203c5;
     --lg: rgb(20, 236, 20);
-    --header: #161c6bee;
+    --db: #161c6bee;
     --blue: #0d15a58f;
-    --lite-blue: rgba(26, 117, 175, 0.9);
+    --lb: rgba(26, 117, 175, 0.9);
     --off-white: rgb(247, 241, 241);
 }
 
@@ -20,7 +20,7 @@ body {
 
 header {
     padding: 20px 35px 30px;
-    background-color: var(--header);
+    background-color: var(--db);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ header {
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 34px;
+    font-size: 37px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -46,7 +46,7 @@ header h1 a {
 }
 
 header h1 a:hover {
-    color: var(--fg);
+    color: var(--lg);
 }
 
 header nav {
@@ -65,13 +65,13 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;    
     font-weight: bolder;
-    font-size: 2vw;
+    font-size: 2.25vw;
     color: var(--off-white);
 }
 
 header nav ul li a:hover {
-    background: var(--fg);
-    color: var(--blue);
+    background: var(--lg);
+    color: var(--header);
     border-radius: 20px;
     text-shadow: none;
     box-shadow:rgba(0, 0, 0, 0.4)
@@ -93,7 +93,7 @@ footer h2 {
 }
 
 section {
-    padding: 40px;
+    padding: 35px 40px 30px 40px;
     margin: 0;
     background-color: var(--blue);
 }   
@@ -109,11 +109,10 @@ a {
 .section-alt {
     background-color: var(--fg);
     width: 100%;
-    border-color: var(--lg)
 }
 
 .section-alt h2 {
-    color: var(--blue);
+    color: var(--db);
 }
 
 .hero {
@@ -126,7 +125,7 @@ a {
 }
 
 .hero-welcome {
-    background-color: var(--lite-blue);
+    background-color: var(--lb);
     padding: 15px;
     width: auto;
     display: flex;
@@ -191,7 +190,7 @@ a {
     margin: 3px auto 3px auto;
     padding: 10px 0px 10px 75px;
     width: 60%;
-    background-color: var(--lite-blue);
+    background-color: var(--lb);
     border: solid 5px var(--fg);
     border-radius: 15%;
 }
