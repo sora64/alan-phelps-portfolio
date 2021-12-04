@@ -116,7 +116,7 @@ a {
 
 .hero-welcome {
     background-color: var(--lb);
-    padding: 15px;
+    padding: 1em;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -240,8 +240,8 @@ a {
     flex-wrap: wrap;
     color: var(--off-white);
     font-size: 25px;
+    padding: 1em;
     margin: 10px auto 3px auto;
-    padding: 20px 0px 10px 75px;
     width: 55%;
     background-color: var(--lb);
     border: solid 5px var(--fg);
@@ -364,18 +364,8 @@ footer h2 {
 
     .contact-address {
         width: auto;
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
         max-height: 400px;
     } 
-
-    .contact-address h3 {
-        font-size: 5vw;
-        text-align: left;
-    }
-
-    .contact-address p {
-        font-size: 5vw;
-        text-align: left;
-    }
 }
