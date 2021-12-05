@@ -318,10 +318,6 @@ footer h2 {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    header {
-        position: fixed;
-    }
-    
     section {
         padding: 30px 15px;
         margin: auto;
