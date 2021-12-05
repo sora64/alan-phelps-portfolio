@@ -142,7 +142,7 @@ a {
     align-items: center;
 }
 .hero-welcome p {
-    font-size: 26px;
+    font-size: 32px;
     font-style: bold;
     max-width: 40%;
     margin: 30px;
@@ -356,7 +356,7 @@ footer h2 {
         max-width: 200px;
         height: auto;
         max-height: 300px;
-        margin: 0 30px 0 30px;
+        margin: 0 30px 30px 30px;
     }
 
     .projects {
