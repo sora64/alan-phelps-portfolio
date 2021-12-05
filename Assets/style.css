@@ -318,6 +318,15 @@ footer h2 {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        max-height: 150px;
+    }
+
+    .hero-welcome {
+        margin-top: 100px;
+    }
+    
     section {
         padding: 30px 15px;
         margin: auto;
