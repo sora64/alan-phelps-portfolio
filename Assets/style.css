@@ -329,6 +329,12 @@ footer h2 {
         left: -30px;
     }
 
+    .hero-welcome p {
+        display: inline-block;
+        position: relative;
+        font-size: 1.4em;
+    }
+
     .lt2 {
         top: 50%;
         left: 0;
