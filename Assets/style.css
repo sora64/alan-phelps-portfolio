@@ -356,10 +356,16 @@ footer h2 {
     }
 
     .projects img {
-        width: auto;
         max-width: 200px;
-        height: auto;
         max-height: 150px;
+    }
+
+    .link-text {
+        max-width: 200px;
+        max-height: 150px;
+        font-size: 0.5em;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .contact-address {
