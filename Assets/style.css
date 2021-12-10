@@ -67,7 +67,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;    
     font-weight: bolder;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     color: var(--off-white);
 }
 
@@ -142,7 +142,7 @@ a {
     align-items: center;
 }
 .hero-welcome p {
-    font-size: 26px;
+    font-size: 32px;
     font-style: bold;
     max-width: 40%;
     margin: 30px;
@@ -190,7 +190,7 @@ a {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .projects a {
@@ -200,6 +200,7 @@ a {
 .projects img {
     display: block;
     border: solid 5px var(--blue);
+    margin: 30px auto 30px auto;
     border-radius: 15px;
     z-index: 1;
 }
@@ -208,9 +209,6 @@ a {
     color: var(--off-white);
     background-color:rgba(76, 99, 173, 0.555);
     position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
     transform: translate(0, -50%);
     text-align: center;
     padding: 100px 0 0 0;
@@ -220,13 +218,30 @@ a {
 }
 
 .lt1 {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
+    margin: 30px auto 30px auto;
+    top: 45%;
+    left: 0;
+    right: 0;
 }
 
 .lt2 {
     height: 300px;
     width: 400px;
+    margin: 30px auto 30px auto;
+    top: 27%;
+    left: 0;
+    right: 0;
+}
+
+.lt3 {
+    height: 300px;
+    width: 400px;
+    margin: 30px auto 30px auto;
+    top: 42%;
+    left: 0;
+    right: 0;
 }
 
 .link-text:hover {
@@ -261,7 +276,7 @@ a {
 
 /* Styling for the footer */
 footer {
-    background: var(--blue);
+    background: var(--db);
     width: 100%;
     padding: 40px 35px;
 }
@@ -311,10 +326,23 @@ footer h2 {
         text-align: center;
         padding-bottom: 25px;
     }
+
+    .lt2 {
+        top: 42%;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        max-height: 150px;
+    }
+
+    .hero-welcome {
+        margin-top: 100px;
+    }
+    
     section {
         padding: 30px 15px;
         margin: auto;
@@ -324,6 +352,12 @@ footer h2 {
         display: block;
         position: relative;
         left: -30px;
+    }
+
+    .hero-welcome p {
+        display: inline-block;
+        position: relative;
+        font-size: 1.4em;
     }
 
     #resume {
@@ -347,7 +381,7 @@ footer h2 {
         max-width: 200px;
         height: auto;
         max-height: 300px;
-        margin: 0 30px 0 30px;
+        margin: 0 30px 30px 30px;
     }
 
     .projects {
@@ -356,10 +390,21 @@ footer h2 {
     }
 
     .projects img {
-        width: auto;
         max-width: 200px;
-        height: auto;
         max-height: 150px;
+    }
+
+    .link-text {
+        padding-bottom: 100px;
+        font-size: 0.5em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .lt1, .lt2, .lt3 {
+        max-width: 200px;
+        max-height: 100px;
+        top: 37%;        
     }
 
     .contact-address {
