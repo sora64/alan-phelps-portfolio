@@ -244,6 +244,15 @@ a {
     right: 0;
 }
 
+.lt4 {
+    height: 300px;
+    width: 400px;
+    margin: 30px auto 30px auto;
+    top: 42%;
+    left: 0;
+    right: 0;
+}
+
 .link-text:hover {
     opacity: 100;
 }
@@ -400,7 +409,7 @@ footer h2 {
         vertical-align: middle;
     }
 
-    .lt1, .lt2, .lt3 {
+    .lt1, .lt2, .lt3, .lt4 {
         max-width: 200px;
         max-height: 150px;
         top: 36%;        
