@@ -9,24 +9,19 @@
     <body>
         <!-- navigation -->
         <header>
-            <h1>
-                <a href="index.html">ALAN PHELPS</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="active">ALAN PHELPS</a>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact Me</a>
+                <a href="#resume">Resume</a>
+                <!-- Hamburger menu -->
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerF()">
+                    <i class="fa fa-bars"></i>
+                    <span class="bar"></span>
+                    <span class="bar"></span>  
+                    <span class="bar"></span>     
+                </a>
             </nav>
         </header>
 
@@ -76,15 +71,15 @@
                 <address class="contact-address">
                     <h3>Alan Phelps</h3>
                     <br/>
-                    <p>Mail: P.O. Box 4496, Richmond, VA</br/></p>
+                    <p class="addresses">Mail: P.O. Box 4496, Richmond, VA</br/></p>
                     <br/>
-                    <p>Phone : (252) 796-7552<br/></p>
+                    <p class="addresses">Phone : (252) 796-7552<br/></p>
                     <br/>
-                    <p>Email: <a href="mailto:phelpsa64@gmail.com">phelpsa64@gmail.com</a></p>
+                    <p class="addresses">Email: <a href="mailto:phelpsa64@gmail.com">phelpsa64@gmail.com</a></p>
                     <br/>
-                    <p>GitHub: <a href="https://github.com/sora64">github.com/sora64</a></p>
+                    <p class="addresses">GitHub: <a href="https://github.com/sora64">github.com/sora64</a></p>
                     <br/>
-                    <p><a href="https://www.linkedin.com/in/alan-phelps-43ab57b6">LinkedIn Profile</a></p>
+                    <p class="addresses"><a href="https://www.linkedin.com/in/alan-phelps-43ab57b6">LinkedIn Profile</a></p>
                 </address>
             </article>
         </section>
@@ -98,5 +93,6 @@
         <footer>
             <h2>Made by Alan Phelps, 2021.</h2>
         </footer>
+        <script src="./Assets/portfolio.js"></script>
     </body>
 </html>
