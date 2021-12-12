@@ -143,7 +143,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
 }
-.hero-welcome p {
+.hero-content p {
     font-size: 32px;
     font-style: bold;
     max-width: 40%;
@@ -394,10 +394,10 @@ footer h2 {
         left: -30px;
     }
 
-    .hero-welcome p {
+    .hero-content p {
         display: inline-block;
         position: relative;
-        font-size: 1.4em;
+        font-size: 2.2rem;
     }
 
     #resume {
