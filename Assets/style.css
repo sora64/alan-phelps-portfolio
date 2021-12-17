@@ -238,16 +238,7 @@ a {
     right: 0;
 }
 
-.lt3 {
-    height: 300px;
-    width: 400px;
-    margin: 30px auto 30px auto;
-    top: 42%;
-    left: 0;
-    right: 0;
-}
-
-.lt4 {
+.lt3AndUp {
     height: 300px;
     width: 400px;
     margin: 30px auto 30px auto;
@@ -437,7 +428,7 @@ footer h2 {
         vertical-align: middle;
     }
 
-    .lt1, .lt2, .lt3, .lt4 {
+    .lt1, .lt2, .lt3AndUp {
         max-width: 200px;
         max-height: 150px;
         top: 36%;        
